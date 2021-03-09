@@ -16,7 +16,7 @@ const AddEvent = () => {
   }
   const handleEventSb = (e) => {
     e.preventDefault();    
-    fetch('http://localhost:4000/add-event', {
+    fetch('https://aqueous-bayou-15134.herokuapp.com/add-event', {
       method: 'POST',
       headers:{'content-type': 'application/json'},
       body: JSON.stringify({})

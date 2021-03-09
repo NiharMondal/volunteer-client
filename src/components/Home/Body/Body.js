@@ -6,7 +6,7 @@ const Body = () => {
   const [event, setEvent] = useState([])
   useEffect( () => {
     async function fetchApi() {
-      let response = await fetch('http://localhost:4000/all-events')
+      let response = await fetch('https://aqueous-bayou-15134.herokuapp.com/all-events')
       response = await response.json()
       setEvent(response)
    }

@@ -11,13 +11,13 @@ const VolunteerList = () => {
   const [volunteer, setVolunteer] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:4000/all-volunteers")
+    fetch("https://aqueous-bayou-15134.herokuapp.com/all-volunteers")
       .then(res => res.json())
       .then(data => setVolunteer(data))
   }, []);
 
   const removeVolunteer = (id) => {
-    fetch("http://localhost:4000/delete-volunteer", {
+    fetch("https://aqueous-bayou-15134.herokuapp.com/delete-volunteer", {
       method: 'delete',
       headers: {
         'content-type': 'application/json',
