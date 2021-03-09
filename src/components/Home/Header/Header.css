@@ -1,0 +1,38 @@
+.logo_wrapper img{
+  width: 170px;
+}
+.nav{
+  text-align: center;
+}
+.link:hover{
+  text-decoration: none;
+}
+.register_btn{
+  color: #fff !important;
+  background-color: #007bff;
+  padding: 5px 18px !important;
+  border-radius: 4px;
+}
+.admin_btn{
+  color: #fff !important;
+  background-color: #6c757d;
+  margin: 0 50px 0 17px;
+  padding: 5px 18px !important;
+  border-radius: 4px;
+}
+.ad_btn:hover{
+  text-decoration: none;
+}
+.reg_btn:hover{
+  text-decoration: none;
+}
+input{
+  padding: 6px 10px;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid  #007bff;
+  outline: none !important;
+}
+
+
+

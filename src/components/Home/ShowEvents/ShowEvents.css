@@ -1,0 +1,16 @@
+.card_content img{
+  background-position: center;
+  background-size: cover;
+}
+.router_link:hover{
+  text-decoration: none;
+}
+.card_wrapper{
+  cursor: pointer;
+  width: 17rem;
+  border-radius: 5px !important;
+  margin-bottom: 2rem;
+}
+.card_title{
+  color: #fff;
+}

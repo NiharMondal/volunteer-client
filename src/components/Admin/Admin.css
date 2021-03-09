@@ -1,0 +1,25 @@
+.logo{
+  width: 200px;
+}
+ul {
+  list-style: none;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+ul .link1{
+  background-color: crimson;
+}
+ul .link2:hover{
+  background-color: rgb(230, 115, 138);
+}
+.link li{
+  color: black;
+}
+
+.link:hover{
+  text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,6 @@
+.delete_logo{
+  cursor: pointer;
+}
+.delete_logo:hover{
+  font-size: larger;
+}

@@ -1,0 +1,19 @@
+.section_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.form_wrapper{
+  text-align: center;
+}
+
+.grab_logo img{
+  text-align: center;
+  width: 200px;
+}
+.register_form{
+  padding: 20px;
+  width: 450px;
+}

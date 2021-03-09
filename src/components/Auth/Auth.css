@@ -1,0 +1,14 @@
+.auth_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.g_Login{
+  cursor: pointer;
+  border-radius: 33px;
+}
+.g_logo{
+  width: 40px;
+}
