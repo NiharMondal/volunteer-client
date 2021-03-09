@@ -7,7 +7,7 @@ const Event = () => {
   const [user]=useContext(UserContext)
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch('https://quiet-badlands-35589.herokuapp.com/my-events', {
+    fetch('https://quiet-badlands-35589.herokuapp.com/my-event', {
       method: 'get',
       headers: { 'content-type': 'application/json', email: user.email },
     })
