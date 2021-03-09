@@ -16,7 +16,7 @@ const AddEvent = () => {
   }
   const handleEventSb = (e) => {
     e.preventDefault();    
-    fetch('https://aqueous-bayou-15134.herokuapp.com/add-event', {
+    fetch('https://quiet-badlands-35589.herokuapp.com/add-event', {
       method: 'POST',
       headers:{'content-type': 'application/json'},
       body: JSON.stringify({})

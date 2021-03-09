@@ -11,13 +11,13 @@ const VolunteerList = () => {
   const [volunteer, setVolunteer] = useState([])
 
   useEffect(() => {
-    fetch("https://aqueous-bayou-15134.herokuapp.com/all-volunteers")
+    fetch("https://quiet-badlands-35589.herokuapp.com/all-volunteers")
       .then(res => res.json())
       .then(data => setVolunteer(data))
   }, []);
 
   const removeVolunteer = (id) => {
-    fetch("https://aqueous-bayou-15134.herokuapp.com/delete-volunteer", {
+    fetch("https://quiet-badlands-35589.herokuapp.com/delete-volunteer", {
       method: 'delete',
       headers: {
         'content-type': 'application/json',

@@ -11,7 +11,7 @@ const RegisterForm = () => {
   const handleRegister = (e) => {
     e.preventDefault();
    
-    fetch("https://aqueous-bayou-15134.herokuapp.com/volunteer", {
+    fetch("https://quiet-badlands-35589.herokuapp.com/add-volunteer", {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body:JSON.stringify({info:form})

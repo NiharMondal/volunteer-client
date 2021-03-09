@@ -7,7 +7,7 @@ const Event = () => {
   const [user]=useContext(UserContext)
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch('https://aqueous-bayou-15134.herokuapp.com/my-events', {
+    fetch('https://quiet-badlands-35589.herokuapp.com/my-events', {
       method: 'get',
       headers: { 'content-type': 'application/json', email: user.email },
     })
@@ -15,7 +15,7 @@ const Event = () => {
       .then(data => setEvents(data))
   },);
   const cancelEvent = (id) => {
-    fetch('https://aqueous-bayou-15134.herokuapp.com/cancel-event', {
+    fetch('https://quiet-badlands-35589.herokuapp.com/cancel-event', {
       method: 'DELETE',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ id: id })
