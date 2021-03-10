@@ -14,7 +14,7 @@ const Event = () => {
     })
       .then(res => res.json())
       .then(data => setEvents(data))
-  },);
+  });
   const cancelEvent = (id) => {
     fetch('https://quiet-badlands-35589.herokuapp.com/cancel-event', {
       method: 'DELETE',
