@@ -6,15 +6,20 @@ import Header from '../Home/Header/Header';
 const Event = () => {
   const [user]=useContext(UserContext)
   const [events, setEvents] = useState([]);
+  console.log(events);
   useEffect(() => {
-    fetch('https://quiet-badlands-35589.herokuapp.com/my-event', {
+    fetch("https://quiet-badlands-35589.herokuapp.com/my-events", {
       method: 'get',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ email: user.email })
+      headers: {
+        'content-type': 'application/json',
+        email: user.email
+      }
     })
       .then(res => res.json())
       .then(data => setEvents(data))
-  });
+    
+  },[])
+
   const cancelEvent = (id) => {
     fetch('https://quiet-badlands-35589.herokuapp.com/cancel-event', {
       method: 'DELETE',
