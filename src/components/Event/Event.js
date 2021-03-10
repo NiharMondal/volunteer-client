@@ -6,7 +6,7 @@ import Header from '../Home/Header/Header';
 const Event = () => {
   const [user]=useContext(UserContext)
   const [events, setEvents] = useState([]);
-  console.log(events);
+  
   useEffect(() => {
     fetch("https://quiet-badlands-35589.herokuapp.com/my-events", {
       method: 'get',
