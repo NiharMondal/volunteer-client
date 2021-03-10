@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import ShowEvents from '../ShowEvents/ShowEvents';
-import loading from './150x150.gif'
+import loading from './150x150.gif';
 const Body = () => {
   const [event, setEvent] = useState([])
   useEffect( () => {
