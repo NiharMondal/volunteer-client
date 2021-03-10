@@ -9,7 +9,8 @@ const Event = () => {
   useEffect(() => {
     fetch('https://quiet-badlands-35589.herokuapp.com/my-event', {
       method: 'get',
-      headers: { 'content-type': 'application/json', email: user.email },
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ email: user.email })
     })
       .then(res => res.json())
       .then(data => setEvents(data))
